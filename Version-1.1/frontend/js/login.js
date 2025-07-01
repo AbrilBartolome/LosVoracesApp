@@ -1,4 +1,4 @@
-document.getElementById('loginForm').addEventListener('submit', async function (e) {
+export async function handleLogin(e) {
   e.preventDefault();
 
   const username = document.getElementById('username').value;
@@ -26,4 +26,6 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     console.error('Error en login:', error);
     alert('Error en el servidor');
   }
-});
+};
+
+document.getElementById('loginForm').addEventListener('submit', handleLogin);

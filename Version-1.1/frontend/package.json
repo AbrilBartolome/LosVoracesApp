@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:frontend": "jest --config=jest.config.frontend.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom",
+    "transform": {}
+  },
+  "devDependencies": {
+    "jest": "^30.0.3",
+    "jest-environment-jsdom": "^30.0.2",
+    "jsdom": "^26.1.0"
+  }
+}
