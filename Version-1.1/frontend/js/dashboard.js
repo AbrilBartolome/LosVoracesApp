@@ -28,9 +28,9 @@ async function getUserData() {
     document.getElementById('revistasLink').href = `${BACKEND_URL}/magazine/catalog`;
     document.getElementById('utilesLink').href = `${BACKEND_URL}/schoolSupply/catalog`;
 
-    document.getElementById('ordenesLink').href = `${BACKEND_URL}/order`;
-    document.getElementById('ventasLink').href = `${BACKEND_URL}/sale`;
-    document.getElementById('proveedoresLink').href = `${BACKEND_URL}/supplier`;
+    document.getElementById('ordenesLink').href = `${BACKEND_URL}/order/catalog`;
+    document.getElementById('ventasLink').href = `${BACKEND_URL}/sale/catalog`;
+    document.getElementById('proveedoresLink').href = `${BACKEND_URL}/supplier/catalog`;
 
   } catch (err) {
     console.error('Error al obtener el usuario:', err);
