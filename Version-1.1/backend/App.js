@@ -17,7 +17,6 @@ app.set('views', path.join(__dirname, 'views'));
 const AuthRoute = require('./routes/AuthRoute');
 const BookRoute = require('./routes/BookRoute');
 const MagazineRoute = require('./routes/MagazineRoute');
-// const ProductRoute = require('./routes/ProductRoute');
 const SchoolSupplyRoute = require('./routes/SchoolSupplyRoute');
 const OrderRoute = require('./routes/OrderRoute');
 const SaleRoute = require('./routes/SaleRoute');
@@ -76,7 +75,6 @@ app.get('/', (req, res) => {
 app.use('/auth', AuthRoute);
 app.use('/book', BookRoute);
 app.use('/magazine', MagazineRoute);
-// app.use('/product', ProductRoute);
 app.use('/schoolSupply', SchoolSupplyRoute);
 app.use('/order', OrderRoute);
 app.use('/sale', SaleRoute);
