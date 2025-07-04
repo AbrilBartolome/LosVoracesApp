@@ -22,7 +22,7 @@ html
                     tr 
                         td= magazine.magazineId
                         td= magazine.name
-                        td= magazine.date
+                        td= magazine.date.toISOString().slice(0,10)  
                         td= magazine.issueNumber 
                         td= magazine.number
                         td= magazine.issn 
